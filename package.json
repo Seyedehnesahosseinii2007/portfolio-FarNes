@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-farnes",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"npx @tailwindcss/cli -i ./src/style/input.css -o ./src/dist/output.css --watch"
+   
+  },
+  "author": "Seyedeh nesa hosseini & fargol azadi",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}

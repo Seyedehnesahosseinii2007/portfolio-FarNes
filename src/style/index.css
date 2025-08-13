@@ -38,6 +38,7 @@ header {
     color: white;
     position: sticky;
     top: -10px;
+    z-index: 1000;
     font-size: 24px;
     box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 }
@@ -112,3 +113,184 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+/* the container for main text */
+
+.container {
+    color: rgba(0, 0, 0, 0.397);
+    margin-top: 50px;
+    text-transform: uppercase;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: 1s;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+
+    width: 60%;
+    padding: 40px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+
+
+
+.animation {
+    height: 90px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.animation>div>div {
+    padding: 0.25rem 0.75rem;
+    height: 4rem;
+    margin-bottom: 2.81rem;
+    display: inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 8s infinite;
+}
+
+/* the text animation */
+.first div {
+    letter-spacing: 10px;
+    font-size: 21pt;
+}
+
+.second div {
+    letter-spacing: 10px;
+    font-size: 21pt;
+}
+
+.third div {
+    letter-spacing: 10px;
+    font-size: 21pt;
+}
+
+@keyframes text-animation {
+    0% {
+        margin-top: 0;
+    }
+
+    10% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: -5.62rem;
+    }
+
+    30% {
+        margin-top: -5.62rem;
+    }
+
+    40% {
+        margin-top: -11.24rem;
+    }
+
+    60% {
+        margin-top: -11.24rem;
+    }
+
+    70% {
+        margin-top: -5.62rem;
+    }
+
+    80% {
+        margin-top: -5.62rem;
+    }
+
+    90% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* animation text for title  */
+.animation-text-title {
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    font-family: "Acme", sans-serif;
+    font-size: 14pt;
+    text-align: center;
+
+}
+
+/* the big container  */
+.welcome {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: 1s;
+    font-size: 27pt;
+    animation-delay: 1s;
+    color: black;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.what-we-do {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInDown 2s forwards;
+    animation-delay: 2s;
+    color: black;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* بخش دایره ای متن  */
+#text-one,
+#text-two,
+#text-three {
+    width: 70%;
+    height: min-content;
+
+}
+
+#text-one {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#text-two {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#text-three {
+    display: flex;
+    justify-content: flex-start;
+}
+

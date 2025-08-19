@@ -255,11 +255,21 @@ ul {
     }
 }
 
+/* what we do  */
 .what-we-do {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInDown 2s forwards;
     animation-delay: 2s;
+    color: black;
+}
+
+/* about us */
+.about-us {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInDown 1.25s forwards;
+    animation-delay: 7s;
     color: black;
 }
 

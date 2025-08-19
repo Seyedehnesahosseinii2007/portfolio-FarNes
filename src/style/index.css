@@ -51,14 +51,14 @@ header {
 }
 
 
-li {
+.headd {
     font-family: "Acme", sans-serif;
     font-size: 14pt;
     cursor: pointer;
     position: relative;
 }
 
-li::after {
+.headd::after {
     content: '';
     width: 0;
     height: 3px;
@@ -70,7 +70,7 @@ li::after {
 
 }
 
-li:hover::after {
+.headd:hover::after {
     width: 100%;
     transition: ease 700ms;
     cursor: pointer;
@@ -269,7 +269,7 @@ ul {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInDown 1.25s forwards;
-    animation-delay: 7s;
+    animation-delay: 3s;
     color: black;
 }
 
@@ -365,4 +365,17 @@ ul {
         transform: none;
         opacity: 1;
     }
+}
+
+.vertical-line {
+    border-left: 3px solid rgba(15, 15, 15, 0.1);
+    height: auto;
+}
+.horizontal-line {
+    border-top: 3px solid rgba(15, 15, 15, 0.1);
+        /* Apply the top border */
+        width: 100%;   
+}
+.nono{
+    font-family: "Nunito", sans-serif;
 }

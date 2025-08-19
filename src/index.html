@@ -22,6 +22,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- text font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,10 +43,10 @@
             <!-- .choose item menu -->
             <div class="header-menu p-8">
                 <ul>
-                    <li class="capitalize">about us</li>
-                    <li class="capitalize">project</li>
-                    <li class="capitalize">what we do ?</li>
-                    <li class="capitalize">contact us</li>
+                    <li class="capitalize headd">about us</li>
+                    <li class="capitalize headd">project</li>
+                    <li class="capitalize headd">what we do ?</li>
+                    <li class="capitalize headd">contact us</li>
                 </ul>
             </div>
         </header>
@@ -61,7 +69,8 @@
                         <div>Software Engineer</div>
                     </div>
                 </section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati magni blanditiis alias
+                <p class="font-['Nunito',sans-serif] nono">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus obcaecati magni blanditiis alias
                     tenetur, totam odio repudiandae iusto. Adipisci fugiat modi necessitatibus libero perferendis
                     deleniti veniam sed id ipsum rerum.</p>
             </main>
@@ -74,26 +83,219 @@
         <div class="texts-for-what-we-do mt-32 flex w-full h-[40rem] justify-center items-center gap-20 flex-col">
             <!-- each section -->
             <section id="text-one">
-               <span class="the-text bg-[#E2DDB4] p-14 text-3xl font-['Acme',sans-serif] rounded-[50%]">design your website</span>
+                <span class="the-text bg-[#E2DDB4] p-14 text-3xl font-['Acme',sans-serif] rounded-[50%]">design your
+                    website</span>
             </section>
             <!-- each section -->
-   
-            <section id="text-two"><span class="the-text bg-[#E2DDB4] p-14 text-3xl font-['Acme',sans-serif] rounded-[50%]">web searching</span></section>
+
+            <section id="text-two"><span
+                    class="the-text bg-[#E2DDB4] p-14 text-3xl font-['Acme',sans-serif] rounded-[50%]">web
+                    searching</span></section>
             <!-- each section -->
 
-            <section id="text-three"><span class="the-text bg-[#E2DDB4] p-14 text-3xl font-['Acme',sans-serif] rounded-[50%]">develope your website</span></section>
+            <section id="text-three"><span
+                    class="the-text bg-[#E2DDB4] p-14 text-3xl font-['Acme',sans-serif] rounded-[50%]">develope your
+                    website</span></section>
 
         </div>
         <!-- end what we do  -->
 
         <!-- title for about us -->
         <h3 class="text-center w-full mt-18 text-5xl  font-['Permanent_Marker',cursive] about-us">About US</h3>
+        <!-- about nesa  -->
+        <section class="nesa flex justify-between p-36 flex-row h-auto  gap-10 ">
+            <!-- nesa picture  -->
+            <div class="nesa-pic"><img class="w-[27rem]" src="../src/images/people/picture.png" alt=""></div>
+            <!--hr vertical line -->
+            <hr class="vertical-line">
+            <!-- nesa resume  -->
+            <div class="resume-nesa">
+                <li class="about-nesa-title text-xl font-['Acme',sans-serif] capitalize ">ABOUT NESA</li>
+                <h2 class="the-title text-6xl font-['Acme',sans-serif] p-4">Passionate & Lead
+                    <br>
+                    Product designer
+                </h2>
+                <br>
+                <p class="text-2xl font-['Nunito',sans-serif]">"I’m <b>Seyedeh Nesa Hosseini </b> a UI/UX designer
+                    passionate about creating
+                    intuitive, user-centered digital
+                    experiences. <br> I help brands
+                    turn’s complex ideas into seamless interfaces. I have complete 100+ projects"</p>
+                <br>
+                <li class="about-exprience text-xl font-['Acme',sans-serif]">EXPRIENCE</li>
+                <div class="exprience w-[50%] h-fit gap-5 flex flex-col p-5">
+                    <!-- first year  -->
+                    <div class="first-year flex w-full h-[70px]  flex-row justify-between ">
+                        <span
+                            class="year border-gray-400 h-8 p-2 flex justify-center items-center rounded-2xl text-center border-2 font-['Nunito',sans-serif]">2024-internship</span>
+                        <span class="detail-exprience w-auto h-80 flex flex-col">
+                            <b class="text-2xl font-['Nunito',sans-serif]">Frontend intership</b>
+                            <strong class="text-gray-400 font-['Nunito',sans-serif]">Telecom.ir</strong>
+                        </span>
+                    </div>
+                    <!-- second year -->
+                    <div class="first-year flex w-full h-[70px]  flex-row justify-between">
+                        <span
+                            class="year border-gray-400 h-8 p-2.5 flex justify-center items-center rounded-2xl text-center border-2 font-['Nunito',sans-serif]">2024-internship</span>
+                        <span class="detail-exprience w-auto h-80 flex flex-col">
+                            <b class="text-2xl font-['Nunito',sans-serif]">Frontend intership</b>
+                            <strong class="text-gray-400 font-['Nunito',sans-serif]">Telecom.ir</strong>
+                        </span>
+                    </div>
+                </div><!--hr vertical line -->
+
+            </div>
+            <hr class="vertical-line">
+            <!-- skills -->
+            <div class="nesa-skills w-[30%] h-4 rounded">
+                <div class="add-skills">
+                    
+                </div>
+                <li class="about-exprience text-xl font-['Acme',sans-serif]">My Skills</li>
+                <span class="html">
+                    <strong>HTML</strong>
+                    <div id="progress-html" class="bg-gray-300 h-1 rounded transition-all duration-1000 ease-in-out"
+                        style="width: 0%;"></div>
+                </span>
+                <span class="css">
+                    <strong>CSS</strong>
+                    <div id="progress-css" class="bg-gray-300 h-1 rounded transition-all duration-1000 ease-in-out"
+                        style="width: 0%;"></div>
+                </span>
+                <span class="javascript">
+                    <strong>JAVASCRIPT</strong>
+                    <div id="progress-js" class="bg-gray-300 h-1 rounded transition-all duration-1000 ease-in-out"
+                        style="width: 0%;"></div>
+                </span>
+
+                <span class="reactt">
+                    <strong>REACT</strong>
+                    <div id="progress-reactt" class="bg-gray-300 h-1 rounded transition-all duration-1000 ease-in-out"
+                        style="width: 0%;">
+                    </div>
+                </span>
+                <!-- horizontal line -->
+                <hr class="horizontal-line mt-10">
+                <div class="socialmedia-nesa">
+                
+                </div>
+            </div>
+        </section>
 
 
+        <!-- about fargol  -->
+
+        <section class="nesa flex justify-between p-36 flex-row-reverse h-auto  gap-10 ">
+            <!-- nesa picture  -->
+            <div class="nesa-pic"><img class="w-[27rem]" src="../src/images/people/picture.png" alt=""></div>
+            <!--hr vertical line -->
+            <hr class="vertical-line">
+            <!-- nesa resume  -->
+            <div class="resume-nesa">
+                <li class="about-nesa-title text-xl font-['Acme',sans-serif] capitalize ">ABOUT NESA</li>
+                <h2 class="the-title text-6xl font-['Acme',sans-serif] p-4">Passionate & Lead
+                    <br>
+                    Product designer
+                </h2>
+                <br>
+                <p class="text-2xl font-['Nunito',sans-serif]">"I’m <b>Seyedeh Nesa Hosseini </b> a UI/UX designer
+                    passionate about creating
+                    intuitive, user-centered digital
+                    experiences. <br> I help brands
+                    turn’s complex ideas into seamless interfaces. I have complete 100+ projects"</p>
+                <br>
+                <li class="about-exprience text-xl font-['Acme',sans-serif]">EXPRIENCE</li>
+                <div class="exprience w-[50%] h-fit gap-5 flex flex-col p-5">
+                    <!-- first year  -->
+                    <div class="first-year flex w-full h-[70px]  flex-row justify-between ">
+                        <span
+                            class="year border-gray-400 h-8 p-2 flex justify-center items-center rounded-2xl text-center border-2 font-['Nunito',sans-serif]">2024-internship</span>
+                        <span class="detail-exprience w-auto h-80 flex flex-col">
+                            <b class="text-2xl font-['Nunito',sans-serif]">Frontend intership</b>
+                            <strong class="text-gray-400 font-['Nunito',sans-serif]">Telecom.ir</strong>
+                        </span>
+                    </div>
+                    <!-- second year -->
+                    <div class="first-year flex w-full h-[70px]  flex-row justify-between">
+                        <span
+                            class="year border-gray-400 h-8 p-2.5 flex justify-center items-center rounded-2xl text-center border-2 font-['Nunito',sans-serif]">2024-internship</span>
+                        <span class="detail-exprience w-auto h-80 flex flex-col">
+                            <b class="text-2xl font-['Nunito',sans-serif]">Frontend intership</b>
+                            <strong class="text-gray-400 font-['Nunito',sans-serif]">Telecom.ir</strong>
+                        </span>
+                    </div>
+
+                </div><!--hr vertical line -->
+
+            </div>
+            <hr class="vertical-line">
+            <!-- skills -->
+            <div class="nesa-skills w-[30%] h-4 rounded">
+                <span class="html">
+                    <strong>HTML</strong>
+                    <div id="progress-html" class="bg-green-500 h-4 rounded transition-all duration-1000 ease-in-out"
+                        style="width: 0%;"></div>
+                </span>
+                <span class="css">
+                    <strong>CSS</strong>
+                    <div id="progress-css" class="bg-green-500 h-4 rounded transition-all duration-1000 ease-in-out"
+                        style="width: 0%;"></div>
+                </span>
+                <span class="javascript">
+                    <strong>JAVASCRIPT</strong>
+                    <div id="progress-js" class="bg-green-500 h-4 rounded transition-all duration-1000 ease-in-out"
+                        style="width: 0%;"></div>
+                </span>
+
+                <span class="reactt">
+                    <strong>REACT</strong>
+                    <div id="progress-reactt" class="bg-green-500 h-4 rounded transition-all duration-1000 ease-in-out"
+                        style="width: 0%;">
+                    </div>
+                </span>
+
+            </div>
+        </section>
 
     </div>
+    <script>
+        // Function to update the progress bar based on ID and percentage
+        function updateProgressBar(progressId, percentage) {
+            const progressBar = document.getElementById(progressId);
+            progressBar.style.width = percentage + "%";
+        }
 
+        // Intersection Observer to detect when the progress bars come into view
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Update the progress bars when they come into view
+                    if (entry.target.id === "progress-html") {
+                        updateProgressBar("progress-html", 80);
+                    }
+                    if (entry.target.id === "progress-css") {
+                        updateProgressBar("progress-css", 70);
+                    }
+                    if (entry.target.id === "progress-js") {
+                        updateProgressBar("progress-js", 60);
+                    }
+                    if (entry.target.id === "progress-reactt") {
+                        updateProgressBar("progress-reactt", 65);
+                    }
+                    // Stop observing the element once the animation is triggered
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 1 });  // Trigger when 50% of the element is visible
 
+        // Start observing the progress bars
+        window.onload = function () {
+            observer.observe(document.getElementById("progress-html"));
+            observer.observe(document.getElementById("progress-css"));
+            observer.observe(document.getElementById("progress-js"));
+            observer.observe(document.getElementById("progress-reactt"));
+        }
+    </script>
 </body>
 
 </html>

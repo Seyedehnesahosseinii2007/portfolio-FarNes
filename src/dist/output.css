@@ -7,9 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-200: oklch(88.5% 0.062 18.334);
-    --color-red-300: oklch(80.8% 0.114 19.571);
-    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-black: #000;
@@ -27,6 +24,7 @@
     --font-weight-semibold: 600;
     --radius-2xl: 1rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -207,9 +205,6 @@
       max-width: 96rem;
     }
   }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
-  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -218,18 +213,6 @@
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
-  }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
-  }
-  .mt-6 {
-    margin-top: calc(var(--spacing) * 6);
-  }
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
-  }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
   }
   .mt-18 {
     margin-top: calc(var(--spacing) * 18);
@@ -242,6 +225,9 @@
   }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .table {
     display: table;
@@ -306,6 +292,9 @@
   .flex-row {
     flex-direction: row;
   }
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
   .items-center {
     align-items: center;
   }
@@ -314,9 +303,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -332,9 +318,6 @@
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
-  }
-  .gap-43 {
-    gap: calc(var(--spacing) * 43);
   }
   .rounded {
     border-radius: 0.25rem;
@@ -361,9 +344,6 @@
   }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
-  }
-  .bg-red-200 {
-    background-color: var(--color-red-200);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -421,15 +401,6 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-\[11\.5pt\] {
-    font-size: 11.5pt;
-  }
-  .text-\[11pt\] {
-    font-size: 11pt;
-  }
-  .text-\[12\.5pt\] {
-    font-size: 12.5pt;
-  }
   .text-\[12pt\] {
     font-size: 12pt;
   }
@@ -451,6 +422,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-0 {
+    opacity: 0%;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -477,6 +451,10 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
   }
 }
 @property --tw-rotate-x {

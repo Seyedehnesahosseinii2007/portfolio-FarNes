@@ -273,6 +273,43 @@ ul {
     color: black;
 }
 
+/* nesa */
+.animate-slide-in-left {
+    animation: slide-in-left 2s ease-out forwards;
+    /* forwards = ثابت می‌ماند */
+}
+
+/* fargol */
+.animate-slide-in-right {
+    animation: slide-in-right 0.9s ease-out forwards;
+}
+
+/* nesa */
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* fargol */
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @keyframes fadeInDown {
     to {
         opacity: 1;
@@ -387,3 +424,50 @@ ul {
 .nono {
     font-family: "Nunito", sans-serif;
 }
+
+/* for icons social media */
+
+.nesa-linkedin {
+    transition: 0.75s;
+}
+
+.nesa-linkedin:hover {
+    transition: 0.5s;
+    transform: scale(1.03, 1.03);
+}
+
+.nesa-instagram {
+    transition: 0.75s;
+}
+
+.nesa-instagram:hover {
+    transition: 0.5s;
+    transform: scale(1.03, 1.03);
+}
+
+.fargol-linkedin {
+    transition: 0.75s;
+}
+
+.fargol-linkedin:hover {
+    transition: 0.5s;
+    transform: scale(1.03, 1.03);
+}
+
+.fargol-instagram {
+    transition: 0.75s;
+}
+
+.fargol-instagram:hover {
+    transition: 0.5s;
+    transform: scale(1.03, 1.03);
+}
+/* our projects title */
+.our-projects{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInDown 1.25s forwards;
+    animation-delay: s; /* این هم خودش غلطه، پایین‌تر اصلاحش می‌کنم */
+    color: black;
+  }
+  

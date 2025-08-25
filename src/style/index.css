@@ -371,11 +371,19 @@ ul {
     border-left: 3px solid rgba(15, 15, 15, 0.1);
     height: auto;
 }
+
 .horizontal-line {
     border-top: 3px solid rgba(15, 15, 15, 0.1);
-        /* Apply the top border */
-        width: 100%;   
+    /* Apply the top border */
+    width: 100%;
 }
-.nono{
+
+.horizontal-line-second {
+    border-top: 2px solid rgba(15, 15, 15, 0.034);
+    /* Apply the top border */
+    width: 100%;
+}
+
+.nono {
     font-family: "Nunito", sans-serif;
 }

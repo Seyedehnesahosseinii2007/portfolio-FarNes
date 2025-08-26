@@ -51,3 +51,34 @@ document.addEventListener("DOMContentLoaded", () => {
   if (nesa) io.observe(nesa);
   if (fargol) io.observe(fargol);
 });
+
+// our projects part
+const prevButton = document.getElementById("carousel-prev");
+const nextButton = document.getElementById("carousel-next");
+const carouselItems = document.getElementById("carousel-items");
+const itemWidth = 110; // Adjust width based on your items
+const itemsToShow = 3; // Number of items visible at once (you can change this)
+
+let currentIndex = 0;
+
+// Update carousel position
+function updateCarousel() {
+  const offset = -(currentIndex * itemWidth * itemsToShow);
+  carouselItems.style.transform = `translateX(${offset}px)`;
+}
+
+// Show next items
+nextButton.addEventListener("click", () => {
+  if (currentIndex < carouselItems.children.length - itemsToShow) {
+    currentIndex++;
+  }
+  updateCarousel();
+});
+
+// Show previous items
+prevButton.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  }
+  updateCarousel();
+});

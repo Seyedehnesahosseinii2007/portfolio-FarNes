@@ -10,10 +10,6 @@
     <!-- style sheet -->
     <link rel="stylesheet" href="../src/style/index.css">
     <!-- fonts -->
-
-    <!-- font-family: "Permanent Marker", cursive; -->
-
-    <!-- font-family: 'Delius'; -->
     <!-- title font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +25,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
-
+    <!-- flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -302,7 +299,7 @@
                         </span>
                     </div>
                 </div><!--hr vertical line -->
-        
+
             </div>
             <hr class="vertical-line">
             <!-- skills -->
@@ -315,9 +312,9 @@
                         <strong>HTML</strong>
                         <div id="progress-html" class="bg-gray-300 h-1 rounded transition-all duration-1000 ease-in-out"
                             style="width: 0%;"></div>
-        
+
                     </span>
-        
+
                     <!-- css skills -->
                     <span class="css">
                         <strong>CSS</strong>
@@ -333,13 +330,13 @@
                     <!-- react skill -->
                     <div class="reactt">
                         <strong>REACT</strong>
-                        <div id="progress-reactt" class="bg-gray-300 h-1 rounded transition-all duration-1000 ease-in-out"
-                            style="width: 0%;">
+                        <div id="progress-reactt"
+                            class="bg-gray-300 h-1 rounded transition-all duration-1000 ease-in-out" style="width: 0%;">
                         </div>
                     </div>
-        
+
                 </div>
-        
+
                 <!-- horizontal line -->
                 <hr class="horizontal-line mt-4">
                 <!-- the social media and contact -->
@@ -362,7 +359,7 @@
                             </div>
                         </span>
                     </div>
-        
+
                 </div>
                 <!-- horizontal line -->
                 <hr class="horizontal-line ">
@@ -379,7 +376,8 @@
                                     viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
                                     <path
                                         d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                     </path>
                                     <path
                                         d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
@@ -398,30 +396,297 @@
                                     viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
                                     <path
                                         d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
-                                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                     </path>
                                     <path d="M7 17V13.5V10" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
                                         stroke-linejoin="round"></path>
                                     <path d="M11 17V13.75M11 10V13.75M11 13.75C11 10 17 10 17 13.75V17" stroke="#000000"
                                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M7 7.01L7.01 6.99889" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                    <path d="M7 7.01L7.01 6.99889" stroke="#000000" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
                                     </path>
                                 </svg>
                             </span>
                         </a>
                     </div>
-        
-                </div>
-        
-            </div>
-        
-        </section>
 
+                </div>
+
+            </div>
+
+        </section>
+        <!-- our projects -->
+        <h3 class="text-center w-full mt-3  text-5xl font-['Permanent_Marker',cursive] our-prj">OUR PROJECTS</h3>
+        <!-- start our projects -->
+        <section class="part-for-projects mt-10">
+            <!-- start the slider -->
+            <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-32 overflow-hidden rounded-lg md:h-96 the-main-carousel">
+                    <!-- Carousel items container -->
+                    <div id="carousel-items" class="flex duration-700 ease-in-out transition-transform mt-17">
+                        <!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40"
+                                        alt="Architechstudio">
+                                    <strong
+                                        class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40" alt="Architechstudio">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="famodecor w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/famooodecor.png" class="w-56"
+                                        alt="Famo Decore">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Famo
+                                        Decore</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40"
+                                        alt="Architechstudio">
+                                    <strong
+                                        class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="famodecor w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/famooodecor.png" class="w-56"
+                                        alt="Famo Decore">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Famo
+                                        Decore</strong>
+                                </div>
+                            </a>
+                        </div><!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40"
+                                        alt="Architechstudio">
+                                    <strong
+                                        class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="famodecor w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/famooodecor.png" class="w-56"
+                                        alt="Famo Decore">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Famo
+                                        Decore</strong>
+                                </div>
+                            </a>
+                        </div><!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40"
+                                        alt="Architechstudio">
+                                    <strong
+                                        class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="famodecor w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/famooodecor.png" class="w-56"
+                                        alt="Famo Decore">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Famo
+                                        Decore</strong>
+                                </div>
+                            </a>
+                        </div><!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40"
+                                        alt="Architechstudio">
+                                    <strong
+                                        class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="famodecor w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/famooodecor.png" class="w-56"
+                                        alt="Famo Decore">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Famo
+                                        Decore</strong>
+                                </div>
+                            </a>
+                        </div><!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40"
+                                        alt="Architechstudio">
+                                    <strong
+                                        class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="famodecor w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/famooodecor.png" class="w-56"
+                                        alt="Famo Decore">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Famo
+                                        Decore</strong>
+                                </div>
+                            </a>
+                        </div><!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40"
+                                        alt="Architechstudio">
+                                    <strong
+                                        class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="famodecor w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/famooodecor.png" class="w-56"
+                                        alt="Famo Decore">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Famo
+                                        Decore</strong>
+                                </div>
+                            </a>
+                        </div><!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40"
+                                        alt="Architechstudio">
+                                    <strong
+                                        class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="famodecor w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/famooodecor.png" class="w-56"
+                                        alt="Famo Decore">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Famo
+                                        Decore</strong>
+                                </div>
+                            </a>
+                        </div><!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40"
+                                        alt="Architechstudio">
+                                    <strong
+                                        class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="famodecor w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/famooodecor.png" class="w-56"
+                                        alt="Famo Decore">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Famo
+                                        Decore</strong>
+                                </div>
+                            </a>
+                        </div><!-- Item 1 -->
+                        <div class="architechstudio w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/architech.png" class="w-40"
+                                        alt="Architechstudio">
+                                    <strong
+                                        class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Architechstudio</strong>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="famodecor w-[250px] h-[200px] flex-shrink-0 mx-2">
+                            <a href="https://architechstudio.io/">
+                                <div class="flex flex-col items-center gap-5 justify-center cursor-pointer">
+                                    <img src="../src/images/logoprojects/famooodecor.png" class="w-56"
+                                        alt="Famo Decore">
+                                    <strong class="font-['Nunito', sans-serif] border-[#0f0f0fd7] border-b-2">Famo
+                                        Decore</strong>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev id="carousel-prev">
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next id="carousel-next">
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+            <!-- end the slider -->
+        </section>
     </div>
     <script src="../src/javascript/index.js">
 
     </script>
+    <!-- flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>

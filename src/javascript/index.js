@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const prevButton = document.getElementById("carousel-prev");
 const nextButton = document.getElementById("carousel-next");
 const carouselItems = document.getElementById("carousel-items");
-const itemWidth = 110; // Adjust width based on your items
+const itemWidth = 108; // Adjust width based on your items
 const itemsToShow = 3; // Number of items visible at once (you can change this)
 
 let currentIndex = 0;

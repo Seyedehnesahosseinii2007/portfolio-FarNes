@@ -572,7 +572,7 @@ ul {
     .exprience {
         width: 100%;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .first-year {
@@ -582,13 +582,21 @@ ul {
     /* Carousel adjustments */
     .part-for-projects {
         padding: 10px;
-        height: 450px;
-        margin-top: 500px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-prj {
+        margin-top: 620px;
+        height: 100px;
+
     }
 
     #carousel-items {
         gap: 10px;
-        height: 500px;
+        height:350px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -599,6 +607,7 @@ ul {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
     }
 
     .architechstudio,
@@ -606,7 +615,7 @@ ul {
         width: 100%;
         margin: 0;
         text-align: center;
-        height: 300px;
+        height: 480px;
     }
 
     .architechstudio img,
@@ -616,14 +625,7 @@ ul {
 
     }
 
-    /* Carousel Controls */
-    #carousel-prev,
-    #carousel-next {
-        font-size: 14px;
-        width: 70px;
-        height: 70px;
-        padding: 10px;
-    }
+
 
     /* Progress Bars */
     .progress-bar-container {
@@ -654,8 +656,11 @@ ul {
     }
 
     .the-main-carousel {
-        height: 400px;
+        height: 200px;
 
     }
+
+    /* carousel */
+
 
 }

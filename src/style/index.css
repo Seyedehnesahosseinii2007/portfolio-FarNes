@@ -478,6 +478,54 @@ ul {
     transform: scale(1.03, 1.03);
 }
 
+/* form */
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+input {
+    border-radius: 10px 10px 10px 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    border-bottom: 2px solid #B6B0A6;
+    background-color: transparent;
+}
+
+input:focus {
+
+
+    box-shadow: none;
+
+    border-radius: 10px 10px 10px 10px;
+
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    border-bottom: 2px solid #121212;
+}
+
+/* برای مرورگرهای وبکییت (Chrome, Safari, Edge) */
+input:focus::-webkit-focus-ring-color {
+    outline: none;
+}
+
 @media (max-width: 576px) {
 
     /* Header adjustments */
@@ -596,7 +644,7 @@ ul {
 
     #carousel-items {
         gap: 10px;
-        height:350px;
+        height: 350px;
         display: flex;
         flex-direction: row;
         justify-content: center;

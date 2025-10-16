@@ -1,3 +1,7 @@
+* {
+    font-family: "Acme", sans-serif;
+}
+
 html,
 body {
     margin: 0;
@@ -36,11 +40,91 @@ header {
     align-items: center;
     background-color: #B6B09F;
     color: white;
-    position: sticky;
     top: -10px;
     z-index: 1000;
     font-size: 24px;
     box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+.off-screen-menu {
+    background-color: darkblue;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 2000;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+
+}
+
+.humburger-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+    z-index: 2000;
+}
+
+/* ...existing code... */
+.humburger-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+    z-index: 2000;
+    display: none;
+}
+
+.humburger-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 2000;
+}
+
+.humburger-menu.active span:nth-child(2) {
+
+    z-index: 2000;
+    opacity: 0;
+}
+
+.humburger-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 2000;
+}
+
+/* ...existing code... */
+.humburger-menu span:nth-child(1) {
+    top: 25%;
+    z-index: 2000;
+}
+
+.humburger-menu span:nth-child(3) {
+    top: 75%;
+    z-index: 2000;
 }
 
 .header-logo {
@@ -508,6 +592,14 @@ input {
     background-color: transparent;
 }
 
+
+
+
+
+
+
+
+
 input:focus {
 
 
@@ -530,18 +622,55 @@ input:focus::-webkit-focus-ring-color {
 
     /* Header adjustments */
     header {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
+        flex-direction: row;
+        height: 100px;
+        padding: 40px;
+        display: flex;
+    }
+
+    .humburger-menu {
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position: relative;
+        z-index: 2000;
+        margin-top: -90px;
     }
 
     .header-logo {
-        width: 50%;
+        width: 38%;
+    }
+
+    /* اگر در موبایل خواستی جای دیگری باشد، در media query هم همین را بده */
+
+    .humburger-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: red;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+        z-index: 2000;
+        display: block;
+    }
+
+    /* what we do  */
+    .what-we-do {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInDown 2s forwards;
+        animation-delay: 2s;
+        color: black;
+        margin-top: 140px;
     }
 
     .header-menu ul {
         flex-direction: column;
         gap: 15px;
+        display: none;
     }
 
     .headd {
@@ -571,8 +700,12 @@ input:focus::-webkit-focus-ring-color {
     /* Nesa and Fargol section */
     .nesa {
         flex-direction: column;
-        padding: 10px;
+        gap: 30px;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
 
         .fargol {
             flex-direction: column;
@@ -585,10 +718,14 @@ input:focus::-webkit-focus-ring-color {
 
     .fargol {
         flex-direction: column;
-        padding: 10px;
+        gap: 30px;
         width: 100%;
         margin-top: 600px;
         height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
     }
 
     .nesa-pic img,
@@ -620,10 +757,24 @@ input:focus::-webkit-focus-ring-color {
     .exprience {
         width: 100%;
         flex-direction: column;
-        gap: 20px;
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+        gap: 40px;
+        height: 230px;
     }
 
     .first-year {
+        flex-direction: column;
+    }
+
+    .first-row-column,
+    .second-row-column,
+    .third-row-column {
         flex-direction: column;
     }
 
@@ -706,6 +857,296 @@ input:focus::-webkit-focus-ring-color {
     .the-main-carousel {
         height: 200px;
 
+    }
+
+    /* input message  */
+    .form-group {
+        margin-bottom: 16px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .message-np {
+        width: 21rem;
+    }
+
+    /* carousel */
+
+
+}
+
+@media (min-width: 577px) and (max-width:768px) {
+
+    /* Header adjustments */
+    header {
+        flex-direction: row;
+        height: 100px;
+        padding: 40px;
+        display: flex;
+    }
+
+    .humburger-menu {
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position: relative;
+        z-index: 2000;
+        margin-top: -90px;
+    }
+
+    .header-logo {
+        width: 38%;
+    }
+
+    /* اگر در موبایل خواستی جای دیگری باشد، در media query هم همین را بده */
+
+    .humburger-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: red;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+        z-index: 2000;
+        display: block;
+    }
+
+    /* what we do  */
+    .what-we-do {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInDown 2s forwards;
+        animation-delay: 2s;
+        color: black;
+        margin-top: 140px;
+    }
+
+    .header-menu ul {
+        flex-direction: column;
+        gap: 15px;
+        display: none;
+    }
+
+    .headd {
+        font-size: 12pt;
+    }
+
+    /* Main Section Adjustments */
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Text animation container */
+    .animation-text-title {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .welcome {
+        font-size: 18pt;
+    }
+
+    .animation>div>div {
+        font-size: 14px;
+    }
+
+    #text-one,
+    #text-two,
+    #text-three {
+        width: 97%;
+    }
+
+    /* Nesa and Fargol section */
+    .nesa {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        .fargol {
+            flex-direction: column;
+            padding: 10px;
+            width: 100%;
+            margin-top: 600px;
+            height: fit-content;
+        }
+
+        .year {
+            width: 50%;
+            height: 35px;
+        }
+    }
+
+    .fargol {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        margin-top: 600px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        .year {
+            width: 50%;
+            height: 35px;
+        }
+    }
+
+    .nesa-pic img,
+    .fargol-pic img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .resume-nesa,
+    .resume-fargol {
+        width: 100%;
+    }
+
+    .nesa-skills,
+    .fargol-skills {
+        width: 100%;
+    }
+
+    .add-skills {
+        width: 100%;
+    }
+
+    .socialmedia-nesa,
+    .socialmedia-fargol {
+        width: 100%;
+    }
+
+    /* Experience section adjustments */
+    .exprience {
+        width: 100%;
+        flex-direction: column;
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+        gap: 40px;
+        height: 230px;
+    }
+
+    .first-year {
+        flex-direction: column;
+    }
+
+    .first-row-column,
+    .second-row-column,
+    .third-row-column {
+        flex-direction: column;
+    }
+
+    /* Carousel adjustments */
+    .part-for-projects {
+        padding: 10px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-prj {
+        margin-top: 620px;
+        height: 100px;
+
+    }
+
+    #carousel-items {
+        gap: 10px;
+        height: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #controls-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .architechstudio,
+    .famodecor {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        height: 480px;
+    }
+
+    .architechstudio img,
+    .famodecor img {
+        width: 100%;
+        max-width: 150px;
+
+    }
+
+
+
+    /* Progress Bars */
+    .progress-bar-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .progress-bar {
+        height: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    /* Social Media Icons */
+    .nesa-instagram,
+    .nesa-linkedin,
+    .fargol-instagram,
+    .fargol-linkedin {
+        width: 100%;
+    }
+
+    /* Buttons Adjustments */
+    .button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .the-main-carousel {
+        height: 200px;
+
+    }
+
+    /* input message  */
+    .form-group {
+        margin-bottom: 16px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .message-np {
+        width: 21rem;
     }
 
     /* carousel */

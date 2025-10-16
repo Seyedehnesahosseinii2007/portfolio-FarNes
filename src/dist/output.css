@@ -7,8 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-100: oklch(96.2% 0.059 95.617);
-    --color-pink-200: oklch(89.9% 0.061 343.231);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-800: oklch(27.8% 0.033 256.848);
@@ -296,9 +296,6 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-28 {
-    height: calc(var(--spacing) * 28);
-  }
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
@@ -326,9 +323,6 @@
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
-  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -350,23 +344,26 @@
   .w-\[27rem\] {
     width: 27rem;
   }
+  .w-\[28rem\] {
+    width: 28rem;
+  }
   .w-\[30\%\] {
     width: 30%;
   }
   .w-\[38rem\] {
     width: 38rem;
   }
-  .w-\[40rem\] {
-    width: 40rem;
-  }
-  .w-\[45rem\] {
-    width: 45rem;
+  .w-\[48rem\] {
+    width: 48rem;
   }
   .w-\[50\%\] {
     width: 50%;
   }
-  .w-\[55rem\] {
-    width: 55rem;
+  .w-\[100\%\] {
+    width: 100%;
+  }
+  .w-\[200px\] {
+    width: 200px;
   }
   .w-\[250px\] {
     width: 250px;
@@ -473,8 +470,8 @@
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
-  .bg-pink-200 {
-    background-color: var(--color-pink-200);
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -653,6 +650,13 @@
       outline-style: none;
     }
   }
+  .hover\:bg-gray-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-400);
+      }
+    }
+  }
   .hover\:bg-gray-800 {
     &:hover {
       @media (hover: hover) {
@@ -664,6 +668,21 @@
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
+    }
+  }
+  .sm\:w-\[21rem\] {
+    @media (width >= 40rem) {
+      width: 21rem;
+    }
+  }
+  .sm\:w-\[33rem\] {
+    @media (width >= 40rem) {
+      width: 33rem;
+    }
+  }
+  .sm\:bg-green-500 {
+    @media (width >= 40rem) {
+      background-color: var(--color-green-500);
     }
   }
   .md\:h-96 {

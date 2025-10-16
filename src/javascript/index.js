@@ -82,3 +82,13 @@ prevButton.addEventListener("click", () => {
   }
   updateCarousel();
 });
+
+// start humburger menu
+// ...existing code...
+const hamMenu = document.querySelector(".humburger-menu"); // ← اصلاح شد
+const offScreenMenu = document.querySelector(".off-screen-menu");
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
+// ...existing code...

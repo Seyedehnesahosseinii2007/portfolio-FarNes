@@ -1,5 +1,5 @@
 * {
-    font-family: "Acme", sans-serif;
+    font-family: "Harmattan", sans-serif;
 }
 
 html,
@@ -146,7 +146,7 @@ nav {
 
 
 .headd {
-    font-family: "Acme", sans-serif;
+    font-family: "Harmattan", sans-serif;
     font-size: 14pt;
     cursor: pointer;
     position: relative;
@@ -326,7 +326,7 @@ ul {
 
     justify-content: center;
     align-items: center;
-    font-family: "Acme", sans-serif;
+    font-family: "Harmattan", sans-serif;
     font-size: 14pt;
     text-align: center;
 
@@ -628,6 +628,38 @@ input:focus {
 input:focus::-webkit-focus-ring-color {
     outline: none;
 }
+
+/* ...existing code... */
+/* ...existing code... */
+footer {
+    /* keep fallback and sizing here, move image to ::before so opacity doesn't affect content */
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* background image with reduced opacity (doesn't affect footer children) */
+footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    background-image: url("../images/banner/footer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    opacity: 0.28;
+ 
+}
+
+
+
+/* ...existing code... */
+/* ...existing code... */
 
 @media (max-width: 576px) {
 
@@ -1464,9 +1496,11 @@ input:focus::-webkit-focus-ring-color {
     .what-we-do {
         margin-top: 140px;
     }
-.our-prj{
-    margin-top: 50px;
-}
+
+    .our-prj {
+        margin-top: 50px;
+    }
+
     .fargol {
         flex-direction: row-reverse;
         /* همان چیدمان اصلی حفظ شود */
@@ -1527,89 +1561,90 @@ input:focus::-webkit-focus-ring-color {
 
 }
 
-@media screen and  (min-width:1201px) and (max-width:1800px){
+@media screen and (min-width:1201px) and (max-width:1800px) {
+
     /* About Us Section Adjustments */
-        .nesa,
-        .fargol {
-            flex-direction: row;
-            /* همان چیدمان اصلی حفظ شود */
-            gap: 3rem;
-            /* کمی فاصله بیشتر بین تصویر و متن */
-            padding: 1rem;
-            /* فضای داخلی بیشتر */
-        }
-    
-        .social {
-            gap: calc(var(--spacing) * 2);
-            padding: calc(var(--spacing) * 1);
-        }
-    
-        .nesa {
-            margin-top: 50px;
-        }
-    
-        .what-we-do {
-            margin-top: 140px;
-        }
-    
-        .our-prj {
-            margin-top: 50px;
-        }
-    
-        .fargol {
-            flex-direction: row-reverse;
-            /* همان چیدمان اصلی حفظ شود */
-            gap: 3rem;
-            /* کمی فاصله بیشتر بین تصویر و متن */
-            padding: 3rem;
-            /* فضای داخلی بیشتر */
-            margin-top: 100px;
-        }
-    
-        .nesa-pic img,
-        .fargol-pic img {
-            width: 32rem;
-            /* کمی بزرگتر از حالت فعلی */
-            align-self: center;
-        }
-    
-        .resume-nesa,
-        .resume-fargol {
-            width: auto;
-        }
-    
-        .about-exprience,
-        .the-title,
-        .text-2xl {
-            line-height: 1.6;
-            font-size: 14pt;
-            /* کمی فاصله بین خطوط متن */
-        }
-    
-        .exprience .detail-exprience {
-            gap: 0.5rem;
-            /* فاصله بین عنوان و شرکت */
-    
-            height: auto;
-        }
-    
-        .first-year {
-    
-            width: 320px;
-            gap: 10px;
-    
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .fargol-skills {
-            width: 35%;
-            /* کمی بزرگتر برای راحت‌تر دیده شدن */
-        }
-    
-        .add-skills div[id^="progress-"] {
-            height: 5px;
-            /* کمی بلندتر */
-        }
+    .nesa,
+    .fargol {
+        flex-direction: row;
+        /* همان چیدمان اصلی حفظ شود */
+        gap: 3rem;
+        /* کمی فاصله بیشتر بین تصویر و متن */
+        padding: 1rem;
+        /* فضای داخلی بیشتر */
+    }
+
+    .social {
+        gap: calc(var(--spacing) * 2);
+        padding: calc(var(--spacing) * 1);
+    }
+
+    .nesa {
+        margin-top: 50px;
+    }
+
+    .what-we-do {
+        margin-top: 140px;
+    }
+
+    .our-prj {
+        margin-top: 50px;
+    }
+
+    .fargol {
+        flex-direction: row-reverse;
+        /* همان چیدمان اصلی حفظ شود */
+        gap: 3rem;
+        /* کمی فاصله بیشتر بین تصویر و متن */
+        padding: 3rem;
+        /* فضای داخلی بیشتر */
+        margin-top: 100px;
+    }
+
+    .nesa-pic img,
+    .fargol-pic img {
+        width: 32rem;
+        /* کمی بزرگتر از حالت فعلی */
+        align-self: center;
+    }
+
+    .resume-nesa,
+    .resume-fargol {
+        width: auto;
+    }
+
+    .about-exprience,
+    .the-title,
+    .text-2xl {
+        line-height: 1.6;
+        font-size: 14pt;
+        /* کمی فاصله بین خطوط متن */
+    }
+
+    .exprience .detail-exprience {
+        gap: 0.5rem;
+        /* فاصله بین عنوان و شرکت */
+
+        height: auto;
+    }
+
+    .first-year {
+
+        width: 320px;
+        gap: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fargol-skills {
+        width: 35%;
+        /* کمی بزرگتر برای راحت‌تر دیده شدن */
+    }
+
+    .add-skills div[id^="progress-"] {
+        height: 5px;
+        /* کمی بلندتر */
+    }
 }

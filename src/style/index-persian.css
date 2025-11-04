@@ -97,7 +97,7 @@ nav {
 .humburger-menu span {
     height: 5px;
     width: 100%;
-    background-color: red;
+    background-color: blue;
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -635,10 +635,18 @@ footer {
     /* keep fallback and sizing here, move image to ::before so opacity doesn't affect content */
     position: relative;
     width: 100%;
-    min-height: 600px;
+    min-height: 150px;
     padding: 20px;
     overflow: hidden;
-}
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50% 400px;
+    /* عرض و ارتفاع شعاع */
+    border-top-right-radius: 20% 300px;
+    border-bottom-left-radius: 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
 
 /* background image with reduced opacity (doesn't affect footer children) */
 footer::before {
@@ -647,16 +655,53 @@ footer::before {
     inset: 0;
     z-index: 0;
 
-    background-image: url("../images/banner/footer.jpg");
+    background-color: #b6b09f;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    opacity: 0.28;
- 
+    opacity: 0.58;
+
 }
 
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+}
 
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+    padding: 3px 8px;
+    font-size: 15pt;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+    white-space: nowrap;
+}
+
+.icon-wrapper:hover .tooltip {
+    opacity: 1;
+    animation-delay: 3.5s;
+}
+
+/* فقط SVG محو شود و transition روی خودش */
+.icon-wrapper svg {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.icon-wrapper:hover svg {
+    opacity: 0;
+    /* یا 0 برای کامل محو شدن */
+}
 
 /* ...existing code... */
 /* ...existing code... */

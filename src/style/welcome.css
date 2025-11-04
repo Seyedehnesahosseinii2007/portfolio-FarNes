@@ -1,0 +1,167 @@
+/* ...existing code... */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* حذف padding بزرگ که باعث overflow می‌شد */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* وسط‌چین عمودی و افقی */
+    min-height: 100vh;
+    overflow-x: hidden;
+    direction: ltr;
+    flex-direction: column;
+    background-image: url("../images/banner/farnes background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* کانتینر اصلی حالا محدود و وسط‌چین است */
+#border-site {
+    width: calc(100% - 40px);
+    /* فاصله کناری منعطف */
+    max-width: 1400px;
+    /* محدودیت عرض برای وسط‌چینی بهتر */
+    margin: 20px auto;
+    padding: 20px;
+    height: 700px;
+    border: 4px solid #B6B09F;
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    display: flex;
+    position: relative;
+    border: solid 3px #6e7491;
+    padding: 20px 40px;
+    flex-direction: row;
+
+    margin: 50px auto 0;
+    font-size: 17px;
+    line-height: 28px;
+
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+
+
+    .capitalize {
+        font-family: 'Acme', sans-serif;
+        font-size: 26pt;
+        word-spacing: 3px;
+    }
+
+}
+
+/* title text  before border site */
+.portfolio-farnes {
+    font-family: 'Acme', sans-serif;
+    font-size: 23pt;
+    word-spacing: 7px;
+}
+
+/* title khoosh amadid */
+.welcome-persian {
+    font-size: 22pt;
+    font-weight: 700;
+}
+
+/* بخش سمت چپ (عکس) */
+.left {
+    flex: 1;
+    /* بخش سمت چپ فضای خودش رو می‌گیره */
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* بخش سمت چپ (عکس) */
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* اختیاری */
+}
+
+/* بخش سمت راست (متن) */
+.right {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+
+/* all buttons  */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    color: black;
+    background-color: #e2ddb4;
+}
+
+
+.btn {
+    position: relative;
+    padding: 15px 70px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color: #e2ddb4;
+    color: #837e72;
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: #837e72 2px solid;
+
+    /* لازم برای اینکه ::after بیرون نزنه */
+}
+
+.btn-persian {
+    font-family: 'Harmattan', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #e2ddb4;
+    /* 👈 رنگ انیمیشن پشت دکمه */
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.5) scaleY(1.4);
+    opacity: 0;
+}

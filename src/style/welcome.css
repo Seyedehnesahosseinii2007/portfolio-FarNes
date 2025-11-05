@@ -89,11 +89,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-top-left-radius: 37px 140px;
-    border-top-right-radius: 23px 130px;
-    border-bottom-left-radius: 110px 19px;
-    border-bottom-right-radius: 120px 24px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
     /* اختیاری */
 }
 
@@ -164,4 +160,212 @@ body {
 .btn:hover::after {
     transform: scaleX(1.5) scaleY(1.4);
     opacity: 0;
+}
+
+/* start responsive mobile  */
+
+@media screen and (max-width: 768px) {
+
+    /* کانتینر اصلی حالا محدود و وسط‌چین است */
+    #border-site {
+        width: calc(100% - 40px);
+        /* فاصله کناری منعطف */
+        max-width: 1400px;
+        /* محدودیت عرض برای وسط‌چینی بهتر */
+
+        margin: 20px auto;
+        padding: 20px;
+        height: 700px;
+        border: 4px solid #B6B09F;
+        border-top-left-radius: 37px 140px;
+        border-top-right-radius: 23px 130px;
+        border-bottom-left-radius: 110px 19px;
+        border-bottom-right-radius: 120px 24px;
+        display: flex;
+        position: relative;
+        border: solid 3px #6e7491;
+        padding: 20px 40px;
+        flex-direction: column;
+
+        margin: 50px auto 0;
+        font-size: 17px;
+        line-height: 28px;
+
+        box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+
+
+        .capitalize {
+            font-family: 'Acme', sans-serif;
+            font-size: 18pt;
+            word-spacing: 3px;
+        }
+
+    }
+
+    .portfolio-farnes {
+        display: none;
+    }
+
+    .welcome-text {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-persian {
+        font-size: 16pt;
+    }
+
+    .left,
+    .right {
+        flex: none;
+        width: 100%;
+
+        .button-language {
+            gap: 25px;
+        }
+    }
+
+    /* بخش سمت راست (متن) */
+    .right {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .btn {
+        position: relative;
+        padding: 5px 30px;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 50px;
+        background-color: #e2ddb4;
+        color: #837e72;
+        border-top-left-radius: 37px 140px;
+        border-top-right-radius: 23px 130px;
+        border-bottom-left-radius: 110px 19px;
+        border-bottom-right-radius: 120px 24px;
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        border: #837e72 2px solid;
+
+        /* لازم برای اینکه ::after بیرون نزنه */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+
+    /* کانتینر اصلی حالا محدود و وسط‌چین است */
+    #border-site {
+        width: calc(100% - 40px);
+        /* فاصله کناری منعطف */
+        max-width: 1400px;
+        /* محدودیت عرض برای وسط‌چینی بهتر */
+
+        margin: 20px auto;
+        padding: 20px;
+        height: 700px;
+        border: 4px solid #B6B09F;
+        border-top-left-radius: 37px 140px;
+        border-top-right-radius: 23px 130px;
+        border-bottom-left-radius: 110px 19px;
+        border-bottom-right-radius: 120px 24px;
+        display: flex;
+        position: relative;
+        border: solid 3px #6e7491;
+        padding: 20px 40px;
+        flex-direction: column;
+
+        margin: 50px auto 0;
+        font-size: 17px;
+        line-height: 28px;
+
+        box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+
+
+        .capitalize {
+            font-family: 'Acme', sans-serif;
+            font-size: 18pt;
+            word-spacing: 3px;
+        }
+
+    }
+
+    .portfolio-farnes {
+        display: none;
+    }
+
+    .welcome-text {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-persian {
+        font-size: 16pt;
+    }
+
+    .left,
+    .right {
+        flex: none;
+        width: 100%;
+
+        .button-language {
+            gap: 25px;
+        }
+    }
+
+    .left img {
+        width: 40%;
+        height: 60%;
+        object-fit: cover;
+
+
+        /* اختیاری */
+    }
+.lg{
+    margin-bottom: -50px;
+}
+    /* بخش سمت راست (متن) */
+    .right {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .btn {
+        position: relative;
+        padding: 5px 30px;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 50px;
+        background-color: #e2ddb4;
+        color: #837e72;
+        border-top-left-radius: 37px 140px;
+        border-top-right-radius: 23px 130px;
+        border-bottom-left-radius: 110px 19px;
+        border-bottom-right-radius: 120px 24px;
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        border: #837e72 2px solid;
+
+        /* لازم برای اینکه ::after بیرون نزنه */
+    }
+
 }

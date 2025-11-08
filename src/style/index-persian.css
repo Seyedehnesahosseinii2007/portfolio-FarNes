@@ -57,7 +57,7 @@ h3[id] {
 
 /* start humburger menu */
 .off-screen-menu {
-    background-color: darkblue;
+    background-color: #e2ddb4;
     height: 100vh;
     width: 100%;
     color: white;
@@ -73,6 +73,7 @@ h3[id] {
     font-size: 3rem;
     transition: .3s ease;
     z-index: 2000;
+
 }
 
 .off-screen-menu.active {
@@ -646,7 +647,8 @@ footer {
     /* عرض و ارتفاع شعاع */
     border-top-right-radius: 20% 300px;
     border-bottom-left-radius: 0;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
 
 /* background image with reduced opacity (doesn't affect footer children) */
 footer::before {
@@ -668,7 +670,7 @@ footer::before {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    
+
 }
 
 /* Tooltip */
@@ -734,7 +736,7 @@ footer::before {
     .humburger-menu span {
         height: 5px;
         width: 100%;
-        background-color: red;
+        background-color: #6a665c;
         border-radius: 25px;
         position: absolute;
         top: 50%;
@@ -962,47 +964,47 @@ footer::before {
     }
 
     /* carousel */
-        /* carousel */
-        footer {
-            /* keep fallback and sizing here, move image to ::before so opacity doesn't affect content */
-            position: relative;
-            width: 100%;
-            min-height: 150px;
-            padding: 30px;
-            overflow: hidden;
-            margin-top: 60px;
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-            border-top-left-radius: 50% 400px;
-            /* عرض و ارتفاع شعاع */
-            border-top-right-radius: 20% 300px;
-            border-bottom-left-radius: 0;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    
-            .right-footer {
-                width: 240px;
-                padding: 14px;
-            }
+    /* carousel */
+    footer {
+        /* keep fallback and sizing here, move image to ::before so opacity doesn't affect content */
+        position: relative;
+        width: 100%;
+        min-height: 150px;
+        padding: 30px;
+        overflow: hidden;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 50% 400px;
+        /* عرض و ارتفاع شعاع */
+        border-top-right-radius: 20% 300px;
+        border-bottom-left-radius: 0;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+        .right-footer {
+            width: 240px;
+            padding: 14px;
         }
-    
-        /* Tooltip */
-        .tooltip {
-            position: absolute;
-            bottom: 0%;
-            left: 50%;
-            transform: translateX(-50%);
-    
-            color: white;
-            padding: 10px 8px;
-            font-size: 11pt;
-            border-radius: 4px;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 1s ease-in-out;
-            white-space: nowrap;
-        }
+    }
+
+    /* Tooltip */
+    .tooltip {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        color: white;
+        padding: 10px 8px;
+        font-size: 11pt;
+        border-radius: 4px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 1s ease-in-out;
+        white-space: nowrap;
+    }
 
 }
 
@@ -1034,7 +1036,7 @@ footer::before {
     .humburger-menu span {
         height: 5px;
         width: 100%;
-        background-color: red;
+        background-color: #6a665c;
         border-radius: 25px;
         position: absolute;
         top: 50%;
@@ -1310,7 +1312,7 @@ footer::before {
     .humburger-menu span {
         height: 5px;
         width: 100%;
-        background-color: red;
+        background-color: #6a665c;
         border-radius: 25px;
         position: absolute;
         top: 50%;

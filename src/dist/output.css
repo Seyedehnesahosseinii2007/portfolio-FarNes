@@ -468,6 +468,18 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .\[border-top-left-radius\:37px_140px\] {
+    border-top-left-radius: 37px 140px;
+  }
+  .\[border-top-right-radius\:23px_130px\] {
+    border-top-right-radius: 23px 130px;
+  }
+  .\[border-bottom-right-radius\:120px_24px\] {
+    border-bottom-right-radius: 120px 24px;
+  }
+  .\[border-bottom-left-radius\:110px_19px\] {
+    border-bottom-left-radius: 110px 19px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -529,11 +541,32 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .p-7 {
+    padding: calc(var(--spacing) * 7);
+  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
+  .p-9 {
+    padding: calc(var(--spacing) * 9);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .p-13 {
+    padding: calc(var(--spacing) * 13);
+  }
   .p-14 {
     padding: calc(var(--spacing) * 14);
+  }
+  .p-15 {
+    padding: calc(var(--spacing) * 15);
+  }
+  .p-17 {
+    padding: calc(var(--spacing) * 17);
+  }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
   }
   .p-36 {
     padding: calc(var(--spacing) * 36);

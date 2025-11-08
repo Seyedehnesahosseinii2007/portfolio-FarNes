@@ -82,6 +82,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+/* تعریف فریم‌های انیمیشن */
+@keyframes motion {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+        /* عکس کوچیک‌تر بشه */
+    }
+
+    25% {
+        opacity: 0.25;
+        transform: scale(0.83);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(0.91);
+    }
+
+    75% {
+        opacity: 0.75;
+        transform: scale(0.97);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        /* کمی بزرگ‌تر از اندازهٔ اصلی */
+    }
 }
 
 /* بخش سمت چپ (عکس) */
@@ -89,7 +120,10 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
+    opacity: 0;
+    display: block;
+    animation: motion 4s ease forwards;
+    /* اجرا و برگشت نرم */
     /* اختیاری */
 }
 
@@ -102,8 +136,22 @@ body {
     align-items: center;
     gap: 30px;
     flex-direction: column;
+    animation-name: rightMotion;
+    animation-duration: 3.4s;
+    transition-delay: 2s;
 }
 
+@keyframes rightMotion {
+    0% {
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
 
 /* all buttons  */
 .btn:hover {
@@ -162,9 +210,7 @@ body {
     opacity: 0;
 }
 
-/* start responsive mobile  */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
 
     /* کانتینر اصلی حالا محدود و وسط‌چین است */
     #border-site {
@@ -236,6 +282,122 @@ body {
         align-items: center;
         gap: 10px;
         flex-direction: column;
+    }
+
+    /* بخش سمت چپ (عکس) */
+    .left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        /* اختیاری */
+    }
+
+    .btn {
+        position: relative;
+        padding: 5px 30px;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 50px;
+        background-color: #e2ddb4;
+        color: #837e72;
+        border-top-left-radius: 37px 140px;
+        border-top-right-radius: 23px 130px;
+        border-bottom-left-radius: 110px 19px;
+        border-bottom-right-radius: 120px 24px;
+        font-weight: 700;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        border: #837e72 2px solid;
+
+        /* لازم برای اینکه ::after بیرون نزنه */
+    }
+}
+
+/* start responsive mobile  */
+@media screen and (min-width: 577px) and (max-width:768px) {
+
+    /* کانتینر اصلی حالا محدود و وسط‌چین است */
+    #border-site {
+        width: calc(100% - 40px);
+        /* فاصله کناری منعطف */
+        max-width: 1400px;
+        /* محدودیت عرض برای وسط‌چینی بهتر */
+
+        margin: 20px auto;
+        padding: 20px;
+        height: 700px;
+        border: 4px solid #B6B09F;
+        border-top-left-radius: 37px 140px;
+        border-top-right-radius: 23px 130px;
+        border-bottom-left-radius: 110px 19px;
+        border-bottom-right-radius: 120px 24px;
+        display: flex;
+        position: relative;
+        border: solid 3px #6e7491;
+        padding: 20px 40px;
+        flex-direction: column;
+
+        margin: 50px auto 0;
+        font-size: 17px;
+        line-height: 28px;
+
+        box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+
+
+        .capitalize {
+            font-family: 'Acme', sans-serif;
+            font-size: 18pt;
+            word-spacing: 3px;
+        }
+
+    }
+
+    .portfolio-farnes {
+        display: none;
+    }
+
+    .welcome-text {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-persian {
+        font-size: 16pt;
+    }
+
+    .left,
+    .right {
+        flex: none;
+        width: 100%;
+
+        .button-language {
+            gap: 25px;
+        }
+    }
+
+    /* بخش سمت راست (متن) */
+    .right {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    /* بخش سمت چپ (عکس) */
+    .left img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+
+        /* اختیاری */
     }
 
     .btn {
@@ -332,9 +494,11 @@ body {
 
         /* اختیاری */
     }
-.lg{
-    margin-bottom: -50px;
-}
+
+    .lg {
+        margin-bottom: -50px;
+    }
+
     /* بخش سمت راست (متن) */
     .right {
         flex: 1;

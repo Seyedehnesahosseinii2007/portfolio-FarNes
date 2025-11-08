@@ -958,11 +958,51 @@ footer::before {
     }
 
     .message-np {
-        width: 21rem;
+        width: 20rem;
     }
 
     /* carousel */
-
+        /* carousel */
+        footer {
+            /* keep fallback and sizing here, move image to ::before so opacity doesn't affect content */
+            position: relative;
+            width: 100%;
+            min-height: 150px;
+            padding: 30px;
+            overflow: hidden;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 50% 400px;
+            /* عرض و ارتفاع شعاع */
+            border-top-right-radius: 20% 300px;
+            border-bottom-left-radius: 0;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+            .right-footer {
+                width: 240px;
+                padding: 14px;
+            }
+        }
+    
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+    
+            color: white;
+            padding: 10px 8px;
+            font-size: 11pt;
+            border-radius: 4px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 1s ease-in-out;
+            white-space: nowrap;
+        }
 
 }
 
